@@ -124,3 +124,27 @@ array([  5.34706011e-05,   7.47825989e-05,   1.03778894e-04,
         -2.64660200e-04,  -1.95236950e-04,  -1.42900058e-04,
         -1.03778894e-04,  -7.47825989e-05,  -5.34706011e-05])
 >>> 
+>>> X, Y = [], []
+>>> for line in open('my_data.txt', 'r')
+SyntaxError: invalid syntax
+>>> for line in open('my_data.txt' 'r') :
+	values = [float(s) for s in line.split()]
+	X.append(values[0])
+	Y.append(values[1])
+
+	
+
+Traceback (most recent call last):
+  File "<pyshell#56>", line 1, in <module>
+    for line in open('my_data.txt' 'r') :
+IOError: [Errno 2] No such file or directory: 'my_data.txtr'
+>>> for line in open('my_data.txt' , 'r') :
+	values = [float(s) for s in line.split()]
+	X.append(values[0])
+	Y.append(values[1])
+
+	
+>>> plt.plot(X,Y)
+[<matplotlib.lines.Line2D object at 0x7efe3892e250>]
+>>> plt.show()
+>>> 
