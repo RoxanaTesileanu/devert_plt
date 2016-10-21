@@ -26,4 +26,25 @@ TypeError: can't multiply sequence by non-int of type 'float'
 >>> plt.plot(X,Y)
 [<matplotlib.lines.Line2D object at 0x7efe39ab2a50>]
 >>> plt.show()
+>>> import numpy as np
+>>> X= np.linspace(0, 2*np.pi, 100)
+>>> Y= np.sin(X)
+>>> plt.plot(X,Y)
+[<matplotlib.lines.Line2D object at 0x7efe39a62c90>]
+>>> plt.show()
+>>> 
+>>> X=np.linspace(-3,2,200)
+>>> Y=X**2-2*X+1
+>>> plt.plot(X,Y)
+[<matplotlib.lines.Line2D object at 0x7efe38b83890>]
+>>> plt.show()
+>>> 
+>>> X= np.linspace(0,2*np.pi, 100)
+>>> Ya= np.sin(X)
+>>> Yb=np.cos(X)
+>>> plt.plot(X, Ya)
+[<matplotlib.lines.Line2D object at 0x7efe38ab5910>]
+>>> plt.plot(X,Yb)
+[<matplotlib.lines.Line2D object at 0x7efe39ac1510>]
+>>> plt.show()
 >>> 
